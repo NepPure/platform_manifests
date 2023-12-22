@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-    <remote name="redroid" fetch="." revision="redroid-13.0.0_r74" />
+    <remote name="redroid" fetch="https://github.com/remote-android/" revision="redroid-13.0.0_r74" />
+    <remote name="NepPure" fetch="https://github.com/NepPure/" revision="redroid-13.0.0_r74" />
 
     <!-- remove unused projects -->
     <remove-project name="platform/prebuilts/bazel/darwin-x86_64" />
@@ -28,7 +29,7 @@
     <project path="frameworks/av" name="platform_frameworks_av" groups="redroid,aosp,pdk" remote="redroid" />
     <project path="frameworks/native" name="platform_frameworks_native" groups="redroid,aosp,pdk" remote="redroid" />
     <project path="system/bpf" name="platform_system_bpf" groups="redroid,aosp,pdk" remote="redroid" />
-    <project path="system/core" name="platform_system_core" groups="redroid,aosp,pdk" remote="redroid" />
+    <project path="system/core" name="platform_system_core" groups="redroid,aosp,pdk" remote="NepPure" />
     <project path="system/libhwbinder" name="platform_system_libhwbinder" groups="redroid,aosp,pdk" remote="redroid" />
     <project path="system/libvintf" name="platform_system_libvintf" groups="redroid,aosp,pdk" remote="redroid" />
     <project path="system/netd" name="platform_system_netd" groups="redroid,aosp,pdk" remote="redroid" />
@@ -39,7 +40,7 @@
     <project path="device/redroid-prebuilts" name="device_redroid-prebuilts" groups="redroid" remote="redroid" revision="master" clone-depth="1" />
     <project path="hardware/redroid/c2" name="redroid-c2" groups="redroid" remote="redroid" revision="master" />
     <project path="hardware/redroid/omx" name="redroid-omx" groups="redroid" remote="redroid" revision="master" />
-    <project path="vendor/redroid" name="vendor_redroid" groups="redroid" remote="redroid" revision="master" />
+    <project path="vendor/redroid" name="vendor_redroid" groups="redroid" remote="NepPure" revision="master" />
 
     <include name="external.xml" />
 
